@@ -77,8 +77,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
         stage_left = "up"
         counter += 1
         print(counter)
-
-      if angle_right > 160:
+      elif angle_right > 160:
         stage_right = "down"
       elif angle_right < 70 and stage_right == 'down':
         stage_right = "up"
